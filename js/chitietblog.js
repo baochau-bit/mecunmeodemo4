@@ -78,3 +78,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Chọn nút "Mua ngay"
+    const buyNowBtn = document.querySelector(".bg-light a.btn.btn-primary");
+
+    if (buyNowBtn) {
+        buyNowBtn.addEventListener("click", function (e) {
+            e.preventDefault(); // Ngăn hành vi mặc định
+            window.location.href = "chocun.html"; // Chuyển sang trang chocun.html
+        });
+    }
+});
+
+
